@@ -1,0 +1,68 @@
+
+.comand-section {
+  background-color: #f5f4fa;
+}
+
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.comand-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.comand-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin: 0 30px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
+
+.icon-social {
+  fill: currentColor;
+}

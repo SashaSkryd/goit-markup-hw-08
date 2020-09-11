@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $primary-text-color;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: $primary-text-color;
+}
