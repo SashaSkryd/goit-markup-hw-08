@@ -1,11 +1,25 @@
 
 .clients-list {
-  display: flex;
-  padding-bottom: 94px;
+//   display: flex;
+//   flex-wrap: wrap;
+width: calc((100% - 2 * 10px) / 2);
+   max-width: 5px;
+}
+.clients-list-item {
+  // @include for-size(tablet-landscape){
+  // display: flex;
+  // flex-wrap: wrap;}
+  // @include for-size(desktop) {
+  //   display: block;
+  // }
+   
+  width: calc((100% - 2 * 10px) / 2);
+   max-width: 5px;
 }
 
 .clients-list-item:not(:last-child) {
-  margin-right: 30px;
+  @include for-size(desktop) {
+  margin-right: 30px;}
 }
 
 .icon-clients {

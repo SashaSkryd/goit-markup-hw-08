@@ -1,0 +1,47 @@
+.title {
+   
+    &-hero {
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $title-text-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62; 
+
+        @include for-size(desktop) {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        }
+
+    }
+
+    &-advantages {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+    }
+
+    &-comand, &-clients, &-doing {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+
+        @include for-size(desktop) {
+        font-size: 36px;
+        line-height: 1.167;
+        letter-spacing: 0.03em;
+        }  
+    }
+    
+
+}

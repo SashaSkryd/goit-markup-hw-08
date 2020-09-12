@@ -1,7 +1,10 @@
 @import "./utils/normalize";
 @import "./utils/variables";
+@import "./utils/_variables-mixin";
 @import "./base/base";
 @import "./base/container";
+@import "./components/title";
+@import "./components/buttom";
 
 @import "./layout/header";
 @import "./layout/parameter-menu";

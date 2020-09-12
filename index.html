@@ -47,13 +47,13 @@
     </div>
   </header>
   <main>
-    <!--Hero-->
+    <!-- Hero -->
     <section class="hero-section">
-      <div class="conteiner hero-container">
-        <div class="hero-block">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-btn" data-modal-open>
-            <span class="text-btn">Заказать услугу</span>
+      <div class="conteiner container-hero">
+        <div class="block-hero">
+          <h1 class="title-hero">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button-hero" data-modal-open>
+            <span class="button-text">Заказать услугу</span>
           </button>
         </div>
       </div>
@@ -61,7 +61,7 @@
     <!--Advantages-->
     <section class="advantages-section">
       <div class="conteiner">
-        <h2 class="advantages-title">Advantades</h2>
+        <h2 class="title-advantages">Advantades</h2>
         <ul class="advantages-list list">
           <li class="advantages-list-item icon-first">
             <p class="list-title">Внимание к деталям</p>
@@ -87,9 +87,9 @@
       </div>
     </section>
     <!--What we are doing-->
-    <section class="doing-sektion">
+    <section class="doing-section">
       <div class="conteiner">
-        <h2 class="section-title">Чем мы занимаемся</h2>
+        <h2 class="title-doing">Чем мы занимаемся</h2>
         <ul class="doing-list list">
           <li class="doing-list-item">
             <img src="./image/whatwearedoing/what-we-are-doing-1.jpg" alt="computer-picture" width="370" height="294" />
@@ -121,10 +121,11 @@
     <!--Our comand-->
     <section class="comand-section">
       <div class="conteiner">
-        <h2 class="section-title">Наша команда</h2>
+        <h2 class="title-comand">Наша команда</h2>
         <ul class="comand-list list">
           <li class="comand-list-item">
-            <img src="./image/Ourcomand/our-comand-1.jpg" alt="Игорь-Демьяненко" height="260" width="270" />
+            <img src="./image/Ourcomand/our-comand-1.jpg" alt="Игорь-Демьяненко" height="260" width="270"
+              class="comand-img" />
             <h3 class="name-title">Игорь Демьяненко</h3>
             <p class="profession">Product Designer</p>
             <ul class="social-list list">
@@ -151,7 +152,8 @@
             </ul>
           </li>
           <li class="comand-list-item">
-            <img src="./image/Ourcomand/our-comand-2.jpg" alt="Ольга-Репина" height="260" width="270" />
+            <img src="./image/Ourcomand/our-comand-2.jpg" alt="Ольга-Репина" height="260" width="270"
+              class="comand-img" />
             <h3 class="name-title">Ольга Репина</h3>
             <p class="profession">Frontend Developer</p>
             <ul class="social-list list">
@@ -178,7 +180,8 @@
             </ul>
           </li>
           <li class="comand-list-item">
-            <img src="./image/Ourcomand/our-comand-3.jpg" alt="Николай-Тарасов" height="260" width="270" />
+            <img src="./image/Ourcomand/our-comand-3.jpg" alt="Николай-Тарасов" height="260" width="270"
+              class="comand-img" />
             <h3 class="name-title">Николай Тарасов</h3>
             <p class="profession">Marketing</p>
             <ul class="social-list list">
@@ -205,7 +208,8 @@
             </ul>
           </li>
           <li class="comand-list-item">
-            <img src="./image/Ourcomand/our-comand-4.jpg" alt="Михаил-Ермаков" height="260" width="270" />
+            <img src="./image/Ourcomand/our-comand-4.jpg" alt="Михаил-Ермаков" height="260" width="270"
+              class="comand-img" />
             <h3 class="name-title">Михаил Ермаков</h3>
             <p class="profession">UI Designer</p>
             <ul class="social-list list">
@@ -237,7 +241,7 @@
     <!--Regular clients-->
     <section class="clients-sektion">
       <div class="conteiner">
-        <h2 class="section-title">Постоянные клиенты</h2>
+        <h2 class="title-clients">Постоянные клиенты</h2>
         <ul class="clients-list list">
           <li class="clients-list-item">
             <a href="" class="clients-list-link">
@@ -321,12 +325,14 @@
           <h2 class="footer-list-title">Подпишитесь на рассылку</h2>
           <textarea name="mailing-mesage" class="mailing-mesage" placeholder="E-mail"></textarea>
         </div>
-        <div class="container-btn-footer"><button type="submit" class="hero-btn position-footer-btn"><span
-              class="text-btn">Подписаться</span>
+        <div class="container-btn-footer">
+          <button type="submit" class="hero-btn position-footer-btn">
+            <span class="text-btn">Подписаться</span>
             <svg class="icon-footer-btn">
               <use href="./image/svg/sprite.svg#icon-leter-footer"></use>
             </svg>
-          </button></div>
+          </button>
+        </div>
       </form>
     </div>
   </footer>
@@ -334,37 +340,50 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="backdrop-container">
       <form action="#" class="modal">
-        <button type="button" class="btn-backdrop" data-modal-close><svg class="icon-backdrop">
+        <button type="button" class="btn-backdrop" data-modal-close>
+          <svg class="icon-backdrop">
             <use href="./image/svg/sprite.svg#icon-close"></use>
-          </svg></button>
+          </svg>
+        </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="modal-box"><input type="name" id="name" class="modal-input">
+        <div class="modal-box">
+          <input type="name" id="name" class="modal-input" />
           <label for="name" class="modal-label">Имя</label>
           <svg class="icon-modal" width="12" height="12">
             <use href="./image/svg/sprite.svg#icon-name"></use>
-          </svg></div>
-        <div class="modal-box"><input type="phone" id="phone" class="modal-input">
+          </svg>
+        </div>
+        <div class="modal-box">
+          <input type="phone" id="phone" class="modal-input" />
           <label for="phone" class="modal-label">Телефон</label>
           <svg class="icon-modal" width="13" height="13">
             <use href="./image/svg/sprite.svg#icon-phone"></use>
-          </svg></div>
-        <div class="modal-box"><input type="email" id="email" class="modal-input">
+          </svg>
+        </div>
+        <div class="modal-box">
+          <input type="email" id="email" class="modal-input" />
           <label for="email" class="modal-label">Почта</label>
           <svg class="icon-modal" width="15" height="12">
             <use href="./image/svg/sprite.svg#icon-mail"></use>
-          </svg></div>
-        <div class="modal-box"><label for="modal-text" class="modal-label checbox-label">Комментарий</label>
-          <textarea name="modal-text" id="modal-text" class="modal-text" placeholder="Введите текст"></textarea></div>
+          </svg>
+        </div>
         <div class="modal-box">
-          <input type="checkbox" id="checkbox" class="input-checkbox is-hiden">
+          <label for="modal-text" class="modal-label checbox-label">Комментарий</label>
+          <textarea name="modal-text" id="modal-text" class="modal-text" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="modal-box">
+          <input type="checkbox" id="checkbox" class="input-checkbox is-hiden" />
           <label for="checkbox" class="checkbox">
             <span>
               <svg class="icon-checkbox" width="11" height="8">
                 <use href="./image/svg/sprite.svg#icon-acept"></use>
               </svg> Соглашаюсь с рассылкой и принимаю <a href="" class="modal-link">Условия договора</a></span>
-          </label></div>
-        <div class="modal-end-block"><button type="submit" class="hero-btn "> <span
-              class="text-btn">Отправить</span></button>
+          </label>
+        </div>
+        <div class="modal-end-block">
+          <button type="submit" class="hero-btn">
+            <span class="text-btn">Отправить</span>
+          </button>
         </div>
       </form>
     </div>

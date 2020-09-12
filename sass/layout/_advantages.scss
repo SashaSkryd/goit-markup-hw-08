@@ -1,66 +1,59 @@
-.advantages-title {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-}
 
-.list-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
-  text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 10px;
-}
 
-.advantages-list {
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-.list-deskription {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
 
-.advantages-list-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  min-width: 270px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
+// .list-title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   color: $title-text-color;
+//   text-transform: uppercase;
+//   margin: 0;
+//   margin-bottom: 10px;
+// }
 
-.icon-first::before {
-  background-image: url(../image/svg/advantages-svg/Group.svg);
-}
+// .advantages-list {
+//   display: flex;
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
-.icon-second:before {
-  background-image: url(../image/svg/advantages-svg/clock.svg);
-}
+// .list-deskription {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+// }
 
-.icon-third:before {
-  background-image: url(../image/svg/advantages-svg/diagram.svg);
-}
+// .advantages-list-item::before {
+//   display: block;
+//   content: "";
+//   height: 120px;
+//   min-width: 270px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-color: #f5f4fa;
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
 
-.icon-fourth:before {
-  background-image: url(../image/svg/advantages-svg/astronaut.svg);
-}
+// .icon-first::before {
+//   background-image: url(../image/svg/advantages-svg/Group.svg);
+// }
 
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
-}
+// .icon-second:before {
+//   background-image: url(../image/svg/advantages-svg/clock.svg);
+// }
+
+// .icon-third:before {
+//   background-image: url(../image/svg/advantages-svg/diagram.svg);
+// }
+
+// .icon-fourth:before {
+//   background-image: url(../image/svg/advantages-svg/astronaut.svg);
+// }
+
+// .advantages-list-item:not(:last-child) {
+//   margin-right: 30px;
+// }
