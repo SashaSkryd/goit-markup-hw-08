@@ -1,13 +1,14 @@
 
 .link-logotipe {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
 
-   @include for-size(phone-only) {
+   @media screen and (max-width: 767px) {
         padding-top: 16px;
         padding-bottom: 16px;
         margin-left: 15px;
@@ -15,11 +16,17 @@
 
 
   &-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
     color: $primary-white-color;
 
-    @include for-size(phone-only) {
+
+    @media screen and (max-width: 767px) {
         padding-top: 60px;
-        padding-bottom: 20px;
+        display: block;
     }
 
   }

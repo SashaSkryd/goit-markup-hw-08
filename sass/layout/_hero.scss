@@ -1,17 +1,16 @@
 
-.container-hero {
+.hero-section {
     background-color: #000;
-    
-    @include for-size(phone-only){
-    height: 400px;
-    width: 100%;
-    }
+}
 
-    @include for-size(phone-only) {
+.container-hero {
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+    text-align: center;
+    
+
 }
 
 

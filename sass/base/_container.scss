@@ -1,14 +1,10 @@
-.conteiner {
+.container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
-    &-clients {
-        padding: 0;
-    }
     
-    @include for-size(tablet-portrait) {
-        width: 480px;
+    @media screen and (max-width: 767px) {
+        max-width: 480px;
     }
 
     @include for-size(tablet-landscape) {

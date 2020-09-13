@@ -1,9 +1,9 @@
 
 
-
 .advantages-list {
 
-    @include for-size(phone-only){
+    @media screen and (max-width: 767px) {
+    
     padding-top: 60px;
     padding-bottom: 60px;
     }
@@ -25,18 +25,22 @@
 .advantages-list-item::before {
   display: block;
   content: "";
-  height: 120px;
-  min-width: 270px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    min-height: 120px;
+  }
+  
 }
 
 .advantages-list-item:not(:last-child) {
     
-    @include for-size(phone-only){
+    @media screen and (max-width: 767px){
     margin-bottom: 30px;}
 }
 .icon-first::before {
