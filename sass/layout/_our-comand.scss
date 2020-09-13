@@ -1,20 +1,34 @@
 .comand-section {
   background-color: #f5f4fa;
+  
 }
+.comand-block {
 
+  @include for-size(desktop) {
+    padding: 0;
+    margin: 0;
+  }
+
+}
 .comand-list {
+
   @media screen and (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 60px;
     
   }
+  
   @include for-size(tablet-landscape){
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 45px;
+    padding-bottom: 60px;
 
   }
+
+  @include for-size(desktop) {
+  padding-bottom: 94px; } 
 }
+
 .name-title {
   font-weight: 500;
   font-size: 16px;
@@ -45,25 +59,33 @@
   border-radius: 0px 0px 4px 4px;
   
   &:not(:last-child) {
+
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
     }
   }
 
-  &:not(:last-child) {
-    @include for-size(desktop){
-    margin-right: 30px;}
-  }
 
   @include for-size(tablet-landscape){
     
     width: calc((100% - 3 * 20px) / 2);
     margin: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @include for-size(desktop) {
+    
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
 }
 
 .comand-img {
+  
   @media screen and (max-width: 767px) {
   width: 100%;}
 }

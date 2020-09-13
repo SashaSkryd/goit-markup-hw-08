@@ -29,6 +29,11 @@
     margin-left: 88px;
       
     }
+
+    @include for-size(desktop) {
+      margin-left: 93px;
+    }
+
   }
 
   .link-header {
@@ -60,19 +65,32 @@
 
 .address-list-item:nth-child(even) {
 
-    @include for-size(tablet-landscape) {
+    @media screen and (max-width: 767px) {
     margin-top: 10px;
     }
-  }
+}
 
 .address-block {
+
+  .header-adress{
+   @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
     
+  }
+  }
     @include for-size(tablet-landscape) {
     margin-left: auto;
     padding-top: 21px;
     padding-bottom: 21px;
     
     }
+     @include for-size(desktop) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+     }
+
     .address-list-item {
   
       @include for-size(tablet-landscape) {
@@ -83,29 +101,61 @@
       }
     }
 
+    @include for-size(desktop) {
+
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    }
+
     .icon-address-1 {
       width: 16px;
       height: 11px;
       fill: currentColor;
-      margin-right: 8px;
+      
       
       @include for-size(tablet-landscape) {
-        width: 14px;
-        height: 10px;
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
       }
+
+      @include for-size(desktop) {
+      width: 14px;
+      height: 10px;
+      margin-right: 8px;
+
+    }
+
     }
 
     .icon-address-2 {
       width: 10px;
       height: 15px;
       fill: currentColor;
-      margin-right: 8px;
+      
 
       @include for-size(tablet-landscape) {
         width: 10px;
         height: 14px;
+        margin-right: 8px;
       }
+
+      @include for-size(desktop) {
+      width: 10px;
+      height: 16px;
+      margin-right: 10px;
+
     }
+
+    }
+}
+.address-list-item:not(:last-child) {
+
+  @include for-size(desktop){
+    margin-right: 50px;
+  }
 }
 
 .header-list-item:not(:last-child) {

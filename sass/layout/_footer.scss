@@ -4,6 +4,14 @@
 
 }
 
+.footer-block {
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .tablet-footer-block  {
   @include for-size(tablet-landscape) {
   display: flex;
@@ -61,6 +69,12 @@
   @media screen and (max-width: 1199px){
   padding-top: 20px;
   }
+
+  @include for-size(desktop) {
+    display: flex;
+    position: relative;
+    
+  }
 }
 
 .mailing-mesage {
@@ -96,13 +110,19 @@
 .container-btn-footer {
   padding-top: 20px;
   padding-bottom: 60px;
+  
+  @include for-size(desktop) {
+    display: flex;
+    padding: 0;
+    
+  }
 }
+
 
 .icon-footer-btn {
   fill: $primary-white-color;
   margin-left: 10px;
 }
-
 
 
 
