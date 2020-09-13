@@ -619,6 +619,25 @@ button {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .portfolio {
   border-bottom: 1px solid #ececec;
 }
@@ -811,5 +830,27 @@ button {
   padding-top: 15px;
   color: #ffffff;
   margin-right: 12px;
+}
+
+.footer-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-btn-footer {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.icon-footer-btn {
+  fill: #ffffff;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=portfolio.css.map */

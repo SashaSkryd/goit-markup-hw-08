@@ -15,7 +15,26 @@
 
 }
 
+.header-content {
 
+  @include for-size(tablet-landscape) {
+  display: flex;
+  }
+}
+
+.navigation {
+
+  @include for-size(tablet-landscape) {
+  display: flex;
+  
+  }
+
+}
+
+.header-adress {
+  display: flex;
+  justify-content: flex-end;
+}
 
 // .header-content {
 //   display: flex;
