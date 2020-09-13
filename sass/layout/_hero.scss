@@ -1,4 +1,20 @@
 
+.container-hero {
+    background-color: #000;
+    
+    @include for-size(phone-only){
+    height: 400px;
+    width: 100%;
+    }
+
+    @include for-size(phone-only) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
 // .hero-title {
 //   font-weight: 700;
 //   font-size: 44px;

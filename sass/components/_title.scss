@@ -8,6 +8,7 @@
     font-weight: 900;
     font-size: 26px;
     line-height: 1.62; 
+    margin-bottom: 30px;
 
         @include for-size(desktop) {
         font-weight: 900;
@@ -27,6 +28,20 @@
     width: 1px !important;
     overflow: hidden;
     }
+    
+    &-advantages-list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+        @include for-size(phone-only){
+        text-align: center;
+        }
+    }
 
     &-comand, &-clients, &-doing {
     font-weight: 700;
@@ -35,11 +50,13 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-text-color;
+    padding-top: 60px;
 
         @include for-size(desktop) {
         font-size: 36px;
         line-height: 1.167;
         letter-spacing: 0.03em;
+        padding-top: 94px;
         }  
     }
     
