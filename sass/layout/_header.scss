@@ -13,28 +13,108 @@
   color: $accent-color;
   }
 
-}
+  .header-content {
 
-.header-content {
-
-  @include for-size(tablet-landscape) {
-  display: flex;
+    @include for-size(tablet-landscape) {
+    display: flex;
+    }
   }
+
+  .header-list{
+     @include for-size(tablet-landscape) {
+    display: flex;
+    padding-top: 32px;
+    margin-left: 88px;
+      
+    }
+
+  }
+  .link-header {
+
+    color: $title-text-color;
+
+    @include for-size(tablet-landscape) {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+
+    }
+  }
+
+  .current {
+    color: $accent-color;
+  }
+
+  .current:after {
+    content: "";
+    display: block;
+    margin-top: 28px;
+    border-bottom: 4px solid $accent-color;
+    border-radius: 2px;
+  }
+
 }
 
-.navigation {
+.address-list-item:nth-child(even) {
 
-  @include for-size(tablet-landscape) {
-  display: flex;
+    @include for-size(tablet-landscape) {
+    margin-top: 10px;
+    }
+  }
+
+.address-block {
+    
+    @include for-size(tablet-landscape) {
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    
+    }
+    .address-list-item {
   
+      @include for-size(tablet-landscape) {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.167;
+      letter-spacing: 0.02em;
+      }
+    }
+
+    .icon-address-1 {
+      width: 16px;
+      height: 11px;
+      fill: currentColor;
+      margin-right: 8px;
+      
+      @include for-size(tablet-landscape) {
+        width: 14px;
+        height: 10px;
+      }
+    }
+
+    .icon-address-2 {
+      width: 10px;
+      height: 15px;
+      fill: currentColor;
+      margin-right: 8px;
+
+      @include for-size(tablet-landscape) {
+        width: 10px;
+        height: 14px;
+      }
+    }
+}
+
+.header-list-item:not(:last-child) {
+
+  @include for-size(tablet-landscape) {
+  margin-right: 50px;
   }
-
 }
 
-.header-adress {
-  display: flex;
-  justify-content: flex-end;
-}
+
+
 
 // .header-content {
 //   display: flex;
@@ -55,13 +135,7 @@
 //   margin-right: 50px;
 // }
 
-// .current:after {
-//   content: "";
-//   display: block;
-//   margin-top: 30px;
-//   border-bottom: 4px solid $accent-color;
-//   border-radius: 2px;
-// }
+
 
 // .header-list {
 //   display: flex;
@@ -91,10 +165,7 @@
 //   margin-right: 50px;
 // }
 
-// .icon-address-list {
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
+
 
 
 // .link-header {

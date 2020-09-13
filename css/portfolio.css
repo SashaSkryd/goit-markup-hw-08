@@ -395,7 +395,7 @@ button {
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
@@ -522,7 +522,13 @@ button {
   .link-logotipe {
     padding-top: 16px;
     padding-bottom: 16px;
-    margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .link-logotipe {
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
@@ -620,21 +626,102 @@ button {
 }
 
 @media (min-width: 768px) {
-  .header-content {
+  .header .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 
 @media (min-width: 768px) {
-  .navigation {
+  .header .header-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 32px;
+    margin-left: 88px;
+  }
+}
+
+.header .link-header {
+  color: #212121;
+}
+
+@media (min-width: 768px) {
+  .header .link-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+  }
+}
+
+.header .current {
+  color: #2196f3;
+}
+
+.header .current:after {
+  content: "";
+  display: block;
+  margin-top: 28px;
+  border-bottom: 4px solid #2196f3;
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .address-list-item:nth-child(even) {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .address-block {
+    margin-left: auto;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .address-block .address-list-item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+  }
+}
+
+.address-block .icon-address-1 {
+  width: 16px;
+  height: 11px;
+  fill: currentColor;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .address-block .icon-address-1 {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+.address-block .icon-address-2 {
+  width: 10px;
+  height: 15px;
+  fill: currentColor;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .address-block .icon-address-2 {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-list-item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 

@@ -1,17 +1,32 @@
 
 
 .advantages-list {
+   @include for-size(tablet-landscape) {
+        display: flex;
+        flex-wrap: wrap;
+        
+    } 
 
     @media screen and (max-width: 767px) {
-    
     padding-top: 60px;
     padding-bottom: 60px;
     }
+
+  
 
     @include for-size(desktop){
      display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
+    width: calc((100%)/2);
+    }
+    .advantages-list-item {
+
+      @media screen and (max-width: 767px) {
+        max-width: 450px;
+      }
+
+     
     }
 }
 
@@ -25,16 +40,12 @@
 .advantages-list-item::before {
   display: block;
   content: "";
+  min-height: 120px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-    min-height: 120px;
-  }
   
 }
 
