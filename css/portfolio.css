@@ -395,7 +395,7 @@ button {
 
 @media (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
@@ -469,6 +469,7 @@ button {
     line-height: 1.167;
     letter-spacing: 0.03em;
     padding-top: 94px;
+    padding-bottom: 50px;
   }
 }
 

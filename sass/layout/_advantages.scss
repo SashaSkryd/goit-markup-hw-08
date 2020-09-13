@@ -1,34 +1,40 @@
 
 
 .advantages-list {
-   @include for-size(tablet-landscape) {
-        display: flex;
-        flex-wrap: wrap;
-        
-    } 
-
-    @media screen and (max-width: 767px) {
+  
+   @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
     }
 
-  
+    @include for-size(tablet-landscape){
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    @include for-size(desktop){
-     display: flex;
+  @include for-size(desktop){
+    display: flex;
+    flex-wrap: nowrap;
     padding-top: 94px;
-    padding-bottom: 94px;
-    width: calc((100%)/2);
-    }
-    .advantages-list-item {
+  
+  }
 
-      @media screen and (max-width: 767px) {
-        max-width: 450px;
-      }
-
-     
-    }
+  .advantages-list-item {
+  
+      
+    @include for-size(tablet-landscape) {
+      width: calc((100% - 2 * 30px) / 2);
+    } 
+  }
 }
+
+.advantages-list-item:nth-child(-n + 2) {
+  @include for-size(tablet-landscape){
+    margin-bottom: 30px;}
+}
+
 
 .list-deskription {
   font-weight: 400;
@@ -49,10 +55,13 @@
   
 }
 
+
+
 .advantages-list-item:not(:last-child) {
     
     @media screen and (max-width: 767px){
     margin-bottom: 30px;}
+
 }
 .icon-first::before {
   background-image: url(../image/svg/advantages-svg/Group.svg);
@@ -71,6 +80,7 @@
 }
 
 .advantages-list-item:not(:last-child) {
-    @include for-size(desktop){
+
+  @include for-size(desktop){
   margin-right: 30px;}
 }

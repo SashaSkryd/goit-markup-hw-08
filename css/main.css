@@ -395,7 +395,7 @@ button {
 
 @media (min-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
@@ -689,6 +689,7 @@ button {
     line-height: 1.167;
     letter-spacing: 0.03em;
     padding-top: 94px;
+    padding-bottom: 50px;
   }
 }
 
@@ -963,6 +964,13 @@ button {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media (min-width: 768px) {
   .advantages-list {
     display: -webkit-box;
@@ -970,11 +978,6 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .advantages-list {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -985,15 +988,21 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding-top: 94px;
-    padding-bottom: 94px;
-    width: calc((100%)/2);
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) {
   .advantages-list .advantages-list-item {
-    max-width: 450px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages-list-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1047,6 +1056,46 @@ button {
   .doing-section {
     display: none;
   }
+}
+
+.doing-list {
+  padding-bottom: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.doing-list-item {
+  width: 370px;
+  height: 294px;
+}
+
+.doing-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.doing-text-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.link-block {
+  position: relative;
+}
+
+.link-block .doing-text-link {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .comand-section {
@@ -1113,20 +1162,24 @@ button {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .container-clients {
+    padding: 0;
+  }
+}
+
 .clients-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
   .clients-list {
-    padding-top: 50px;
-    padding-bottom: 64px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1137,7 +1190,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .clients-list-item {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
   }
 }
 
@@ -1149,7 +1202,7 @@ button {
 
 @media (min-width: 1200px) {
   .clients-list-item {
-    width: calc((100% - 6 * 30px) / 6);
+    width: calc((100% - 5 * 30px) / 6);
   }
 }
 

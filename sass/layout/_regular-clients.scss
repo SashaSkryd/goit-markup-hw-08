@@ -1,13 +1,16 @@
+.container-clients {
+  @media screen and (max-width: 1199px) {
+    padding: 0;
+  }
+}
 
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
   padding-bottom: 30px;
 
   @include for-size(desktop) {
-    padding-top: 50px;
-    padding-bottom: 64px;
+    padding-bottom: 94px;
   }
 
 }
@@ -17,7 +20,7 @@
   margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc((100% - 1 * 30px) / 2);
   }
 
   @include for-size(tablet-landscape) {
@@ -25,7 +28,7 @@
   }
 
   @include for-size(desktop) {
-    width: calc((100% - 6 * 30px) / 6);
+    width: calc((100% - 5 * 30px) / 6);
   }
 
 }
