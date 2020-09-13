@@ -10,14 +10,15 @@
     @include for-size(tablet-landscape){
     display: flex;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   @include for-size(desktop){
     display: flex;
     flex-wrap: nowrap;
     padding-top: 94px;
+    padding-bottom: 0;
   
   }
 
@@ -26,13 +27,16 @@
       
     @include for-size(tablet-landscape) {
       width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
     } 
-  }
-}
 
-.advantages-list-item:nth-child(-n + 2) {
-  @include for-size(tablet-landscape){
-    margin-bottom: 30px;}
+    @include for-size(desktop){
+      margin: 0;
+      
+    }
+  
+
+  }
 }
 
 
@@ -83,4 +87,5 @@
 
   @include for-size(desktop){
   margin-right: 30px;}
+
 }

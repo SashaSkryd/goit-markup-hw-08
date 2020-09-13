@@ -6,6 +6,10 @@
   padding-top: 20px;
   margin: 0 30px;
 
+   @media screen and (max-width: 1199px){
+    padding-bottom: 24px;
+   }
+
   @include for-size(desktop){
     padding-bottom: 30px;
   }

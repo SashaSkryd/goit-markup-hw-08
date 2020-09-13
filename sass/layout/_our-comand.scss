@@ -1,10 +1,18 @@
 .comand-section {
   background-color: #f5f4fa;
 }
+
 .comand-list {
   @media screen and (max-width: 767px) {
     padding-top: 30px;
     padding-bottom: 60px;
+    
+  }
+  @include for-size(tablet-landscape){
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+
   }
 }
 .name-title {
@@ -35,9 +43,6 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
   
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -48,6 +53,12 @@
   &:not(:last-child) {
     @include for-size(desktop){
     margin-right: 30px;}
+  }
+
+  @include for-size(tablet-landscape){
+    
+    width: calc((100% - 3 * 20px) / 2);
+    margin: 15px;
   }
 
 }

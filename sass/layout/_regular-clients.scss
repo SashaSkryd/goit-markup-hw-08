@@ -20,7 +20,7 @@
   margin-bottom: 30px;
 
   @media screen and (max-width: 767px) {
-    width: calc((100% - 1 * 30px) / 2);
+    width: calc((100% - 2 * 30px) / 2);
   }
 
   @include for-size(tablet-landscape) {
