@@ -522,10 +522,10 @@ button {
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #212121;
+  font-size: 24px;
+  line-height: 1.167;
 }
 
 @media screen and (max-width: 767px) {
@@ -546,14 +546,14 @@ button {
   .link-logotipe {
     padding-top: 24px;
     padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.192;
   }
 }
 
 .link-logotipe-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -562,6 +562,24 @@ button {
   .link-logotipe-footer {
     padding-top: 60px;
     display: block;
+    font-size: 24px;
+    line-height: 1.167;
+  }
+}
+
+@media (min-width: 768px) {
+  .link-logotipe-footer {
+    font-size: 24px;
+    line-height: 1.167;
+    padding-top: 60px;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link-logotipe-footer {
+    font-size: 26px;
+    line-height: 1.192;
   }
 }
 
@@ -589,6 +607,7 @@ button {
 @media (min-width: 1200px) {
   .social-list, .social-list-footer {
     padding-bottom: 30px;
+    margin: 0;
   }
 }
 
@@ -631,23 +650,6 @@ button {
   fill: currentColor;
 }
 
-.header {
-  background-color: #fff;
-}
-
-.header .link-logotipe {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.header .part-logotipe {
-  color: #2196f3;
-}
-
 .header .header-content {
   padding-left: 15px;
   padding-right: 15px;
@@ -681,6 +683,10 @@ button {
   color: #212121;
 }
 
+.header .link-header:hover, .header .link-header:focus {
+  color: #2196f3;
+}
+
 @media (min-width: 768px) {
   .header .link-header {
     font-weight: 500;
@@ -697,14 +703,52 @@ button {
 .header .current:after {
   content: "";
   display: block;
-  margin-top: 28px;
+  height: 26px;
   border-bottom: 4px solid #2196f3;
   border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .header .current:after {
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .address-list-item:nth-child(even) {
     margin-top: 10px;
+  }
+}
+
+.connect-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connect-header:hover, .connect-header:focus {
+  color: #2196f3;
+}
+
+@media (min-width: 768px) {
+  .address-block {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .address-block {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address-block .header-adress {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -716,19 +760,9 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .address-block {
-    margin-left: auto;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .address-block {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -792,6 +826,12 @@ button {
     width: 10px;
     height: 16px;
     margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .address-list-item:last-child {
+    margin-top: 10px;
   }
 }
 
@@ -946,41 +986,6 @@ button {
   background-color: #2f303a;
 }
 
-@media (min-width: 1200px) {
-  .footer-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .tablet-footer-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 5px;
-  }
-}
-
-@media (min-width: 768px) {
-  .join {
-    margin-left: 165px;
-  }
-}
-
 .footer-block {
   padding-left: 15px;
   padding-right: 15px;
@@ -992,18 +997,49 @@ button {
   }
 }
 
+@media (min-width: 1200px) {
+  .footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .tablet-footer-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .join {
+    margin-left: 165px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    padding-top: 72px;
+  }
+}
+
 .adress {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-@media screen and (max-width: 1199px) {
-  .adress {
-    padding-top: 20px;
-  }
+  padding-top: 20px;
 }
 
 .connect-footer {
@@ -1012,11 +1048,19 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  display: block;
 }
 
 @media screen and (max-width: 1199px) {
   .connect-footer {
     padding-top: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mailing-btn {
+    margin-left: 93px;
+    padding-top: 72px;
   }
 }
 
@@ -1032,6 +1076,7 @@ button {
     display: -ms-flexbox;
     display: flex;
     position: relative;
+    padding-top: 20px;
   }
 }
 
@@ -1060,6 +1105,12 @@ button {
 @media screen and (max-width: 1199px) {
   .mailing-mesage {
     width: 450px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mailing-mesage {
+    width: 358px;
   }
 }
 
@@ -1092,5 +1143,28 @@ button {
 .icon-footer-btn {
   fill: #ffffff;
   margin-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  .desktop-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-list-item:last-child {
+    padding-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
