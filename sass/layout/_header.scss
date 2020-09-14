@@ -67,6 +67,10 @@
 
 }
 
+.icon-header {
+  fill: #000;
+}
+
 .address-list-item:nth-child(even) {
 
     @media screen and (max-width: 767px) {
@@ -212,7 +216,8 @@
 }
 
 .header-list-item:not(:first-child) {
-  margin-top: 40px;
+  @media screen and (max-width: 767px) {
+  margin-top: 40px;}
 }
 
 .header-list-item:not(:last-child) {

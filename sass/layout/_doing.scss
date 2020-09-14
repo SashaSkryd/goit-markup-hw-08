@@ -7,8 +7,11 @@
 }
 
 .doing-list {
+  padding-right: 15px;
+  padding-left: 15px;
   padding-bottom: 94px;
   display: flex;
+  justify-content: space-between;
 }
 
 .doing-list-item {
