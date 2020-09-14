@@ -4,30 +4,25 @@
 
 .buttom-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding-top: 94px;
   padding-bottom: 50px;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 }
 
 .buttom-list-item:not(:last-child) {
   margin: 8px;
 }
 
-.btn-portfolio {
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-text-color;
-  padding: 6px 22px;
-  &:hover,
-  &:focus {
-    color: $primary-white-color;
-    background-color: $accent-color;
-  }
-}
+
