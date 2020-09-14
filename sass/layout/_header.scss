@@ -4,10 +4,11 @@
   .header-content {
     padding-left: 15px;
     padding-right: 15px;
-
+    
     @include for-size(tablet-landscape) {
     display: flex;
     }
+
   }
 
   .header-list{
@@ -52,6 +53,12 @@
     border-bottom: 4px solid $accent-color;
     border-radius: 2px;
 
+    @media screen and (max-width: 767px) {
+      height: 8px;
+      width: 61px;
+      margin: 0 auto;
+    }
+
     @include for-size(tablet-landscape) {
     height: 30px; 
     }
@@ -76,7 +83,24 @@
   }
 }
 
+.navigation {
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    text-align: center;  
+    padding-top: 60px;
+    }
+}
+
 .address-block {
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+     
+  }
 
   @include for-size(tablet-landscape) {
     margin-left: auto;
@@ -167,8 +191,16 @@
 }
 
 .address-list-item:last-child {
-  @media screen and (max-width: 1199px) {
+  @include for-size(tablet-portrait) {
+    margin-top: 16px;
+  }
+  
+  @include for-size(tablet-landscape) {
     margin-top: 10px;
+  }
+
+  @include for-size(desktop) {
+    margin: 0;
   }
 }
 
@@ -177,6 +209,10 @@
   @include for-size(desktop){
     margin-right: 50px;
   }
+}
+
+.header-list-item:not(:first-child) {
+  margin-top: 40px;
 }
 
 .header-list-item:not(:last-child) {

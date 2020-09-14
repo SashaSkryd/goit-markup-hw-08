@@ -946,6 +946,14 @@ button {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .header .current:after {
+    height: 8px;
+    width: 61px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 768px) {
   .header .current:after {
     height: 30px;
@@ -969,6 +977,27 @@ button {
 
 .connect-header:hover, .connect-header:focus {
   color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1067,9 +1096,21 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media (min-width: 480px) {
+  .address-list-item:last-child {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 768px) {
   .address-list-item:last-child {
     margin-top: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .address-list-item:last-child {
+    margin: 0;
   }
 }
 
@@ -1077,6 +1118,10 @@ button {
   .address-list-item:not(:last-child) {
     margin-right: 50px;
   }
+}
+
+.header-list-item:not(:first-child) {
+  margin-top: 40px;
 }
 
 @media (min-width: 768px) {
@@ -1305,6 +1350,12 @@ button {
 
 @media screen and (max-width: 767px) {
   .comand-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .comand-list-item:nth-child(-n + 2) {
     margin-bottom: 30px;
   }
 }

@@ -59,8 +59,14 @@
   border-radius: 0px 0px 4px 4px;
   
   &:not(:last-child) {
-
     @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:nth-child(-n + 2) {
+
+    @media screen and (max-width: 1199px) {
       margin-bottom: 30px;
     }
   }
