@@ -26,7 +26,9 @@
 
   }
 
-  .link-header {
+}
+
+.link-header {
 
     color: $title-text-color;
     &:hover,
@@ -42,13 +44,14 @@
 
     }
   }
-}
 
   .current {
     color: $accent-color;
+    position: relative;
   }
 
   .current:after {
+
     content: "";
     display: block;
     height: 26px;
@@ -78,7 +81,6 @@
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 15px;
     margin-left: auto;
 }
 
@@ -95,12 +97,14 @@
   }
 
 .header-menu {
-    top: 100%;
-    left: 50%;
-    transform: translatex(-50%);
   
   @media screen and (max-width: 767px) {
     position: absolute;
+    max-width: 450px;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    transform: translatex(-50%);
     background: #FFFFFF;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     opacity: 0;
@@ -110,7 +114,10 @@
     
   }
     
-
+  @include for-size(tablet-landscape){
+    display: flex;
+    flex-grow: 1;
+  }
   }
 
   .header-menu.is-open {
@@ -171,13 +178,12 @@
   }
 
   @include for-size(tablet-landscape) {
-    margin-left: auto;
     padding-top: 21px;
     padding-bottom: 21px;
+    margin-left: auto;
   }
 
   @include for-size(desktop) {
-    margin-left: auto;
     padding-top: 32px;
       padding-bottom: 32px;
   }

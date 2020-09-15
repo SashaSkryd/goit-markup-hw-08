@@ -698,16 +698,16 @@ button {
   }
 }
 
-.header .link-header {
+.link-header {
   color: #212121;
 }
 
-.header .link-header:hover, .header .link-header:focus {
+.link-header:hover, .link-header:focus {
   color: #2196f3;
 }
 
 @media (min-width: 768px) {
-  .header .link-header {
+  .link-header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.143;
@@ -717,6 +717,7 @@ button {
 
 .current {
   color: #2196f3;
+  position: relative;
 }
 
 .current:after {
@@ -752,7 +753,6 @@ button {
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 15px;
   margin-left: auto;
 }
 
@@ -769,16 +769,15 @@ button {
   display: block;
 }
 
-.header-menu {
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
-}
-
 @media screen and (max-width: 767px) {
   .header-menu {
     position: absolute;
+    max-width: 450px;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
     background: #FFFFFF;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -787,6 +786,17 @@ button {
     pointer-events: none;
     -webkit-transition: all 500ms linear;
     transition: all 500ms linear;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -851,15 +861,14 @@ button {
 
 @media (min-width: 768px) {
   .address-block {
-    margin-left: auto;
     padding-top: 21px;
     padding-bottom: 21px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .address-block {
-    margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
   }

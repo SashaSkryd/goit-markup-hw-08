@@ -139,6 +139,7 @@
 }
 
 .checkbox {
+  
   text-align: center;
   display: flex;
   align-items: center;
@@ -151,6 +152,7 @@
   border: 1px solid #2196f3;
   border-radius: 2px;
   margin-right: 7px;
+  
 }
 }
 
@@ -160,8 +162,8 @@
 
 .icon-checkbox {
   position: absolute;
-  top: 7px;
-  left: 2px;
+  top: 0;
+  left: 0;
   fill: $primary-white-color;
 }
 
