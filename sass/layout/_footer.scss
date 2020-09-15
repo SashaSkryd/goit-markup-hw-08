@@ -98,7 +98,7 @@
   }
 
   @include for-size(desktop) {
-    max-width: 358px;
+    min-width: 358px;
   }
 }
 

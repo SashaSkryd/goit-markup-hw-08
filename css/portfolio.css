@@ -1319,7 +1319,7 @@ button {
 
 @media (min-width: 1200px) {
   .mailing-mesage {
-    max-width: 358px;
+    min-width: 358px;
   }
 }
 
