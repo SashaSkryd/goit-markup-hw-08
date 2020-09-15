@@ -354,7 +354,6 @@ template {
 *::after {
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
 }
 
 body {
@@ -1307,13 +1306,13 @@ button {
 
 @media screen and (max-width: 1199px) {
   .mailing-mesage {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
   .mailing-mesage {
-    width: 358px;
+    max-width: 358px;
   }
 }
 

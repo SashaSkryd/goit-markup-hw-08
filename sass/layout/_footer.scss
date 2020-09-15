@@ -1,16 +1,13 @@
-
 .footer {
   background-color: #2f303a;
-
 }
 
 .footer-block {
   padding-left: 15px;
   padding-right: 15px;
-  
-  @media screen and (max-width: 1199px){
-  text-align: center;
 
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 
   @include for-size(desktop) {
@@ -19,26 +16,23 @@
   }
 }
 
-.tablet-footer-block  {
+.tablet-footer-block {
   @include for-size(tablet-landscape) {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
   }
-  
 }
 
 .join {
   @include for-size(tablet-landscape) {
-  margin-left: 165px;
-  padding-top: 5px;
+    margin-left: 165px;
+    padding-top: 5px;
   }
   @include for-size(desktop) {
-  margin-left: 70px;
-  padding-top: 72px;
+    margin-left: 70px;
+    padding-top: 72px;
   }
-
 }
-
 
 .adress {
   font-weight: 400;
@@ -47,7 +41,6 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   padding-top: 20px;
-
 }
 
 .connect-footer {
@@ -58,23 +51,21 @@
   color: rgba(255, 255, 255, 0.6);
   display: block;
 
-  @media screen and (max-width: 1199px){
+  @media screen and (max-width: 1199px) {
     padding-top: 8px;
   }
-
 }
 
 .mailing-btn {
   @include for-size(desktop) {
     margin-left: 93px;
     padding-top: 72px;
-    
   }
 }
 
 .mailing-container {
-  @media screen and (max-width: 1199px){
-  padding-top: 20px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 20px;
   }
 
   @include for-size(desktop) {
@@ -102,14 +93,13 @@
     max-width: 450px;
   }
 
-  @media screen and (max-width: 1199px){
-    width: 450px;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
   }
 
   @include for-size(desktop) {
-    width: 358px;
+    max-width: 358px;
   }
-
 }
 
 .footer-btn {
@@ -121,14 +111,12 @@
 .container-btn-footer {
   padding-top: 20px;
   padding-bottom: 60px;
-  
+
   @include for-size(desktop) {
     display: flex;
     padding: 0;
-    
   }
 }
-
 
 .icon-footer-btn {
   fill: $primary-white-color;
@@ -139,23 +127,17 @@
   @include for-size(desktop) {
     display: flex;
     align-items: flex-end;
-    
   }
 }
-
 
 .footer-list-item:not(:last-child) {
   @include for-size(desktop) {
-  margin-bottom: 9px;  
+    margin-bottom: 9px;
   }
-  
 }
 
 .footer-list-item:last-child {
-   @include for-size(desktop) {
-  padding-bottom: 60px;}
+  @include for-size(desktop) {
+    padding-bottom: 60px;
+  }
 }
-
-
-
-
