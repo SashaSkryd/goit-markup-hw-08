@@ -569,7 +569,8 @@ button {
 }
 
 .checkbox:before {
-  display: block;
+  position: relative;
+  display: inline-block;
   content: "";
   width: 16px;
   height: 15px;
@@ -579,15 +580,17 @@ button {
   margin-right: 7px;
 }
 
-.input-checkbox:checked + .checkbox::before {
-  background-color: #2196f3;
+.checkbox .icon-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #ffffff;
 }
 
-.icon-checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: #ffffff;
+.input-checkbox:checked + .checkbox::before {
+  background-color: #2196f3;
 }
 
 .is-hiden {
@@ -977,6 +980,16 @@ button {
   margin-left: auto;
 }
 
+.burger-btn:focus .open-menu-icon,
+.burger-btn:hover .open-menu-icon {
+  fill: #2196f3;
+}
+
+.burger-btn:focus .close-menu-icon,
+.burger-btn:hover .close-menu-icon {
+  fill: #2196f3;
+}
+
 .open-menu-icon {
   width: 24px;
   height: 16px;
@@ -993,6 +1006,7 @@ button {
 @media screen and (max-width: 767px) {
   .header-menu {
     position: absolute;
+    z-index: 1;
     max-width: 450px;
     width: 100%;
     top: 100%;

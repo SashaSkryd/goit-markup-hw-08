@@ -144,7 +144,8 @@
   display: flex;
   align-items: center;
   &:before {
-  display: block;
+  position: relative;
+  display: inline-block;
   content: "";
   width: 16px;
   height: 15px;
@@ -154,18 +155,20 @@
   margin-right: 7px;
   
 }
+  .icon-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);  
+  fill: $primary-white-color;
+  }
+
 }
 
 .input-checkbox:checked + .checkbox::before {
   background-color: $accent-color;
 }
 
-.icon-checkbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: $primary-white-color;
-}
 
 .is-hiden {
   position: absolute !important;
