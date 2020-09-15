@@ -412,6 +412,7 @@ button {
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -1206,10 +1207,6 @@ button {
   .header-list-item:not(:last-child) {
     margin-right: 50px;
   }
-}
-
-.hero-section {
-  background-color: #000;
 }
 
 .container-hero {

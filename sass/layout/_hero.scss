@@ -1,7 +1,77 @@
 
-.hero-section {
-    background-color: #000;
-}
+// .hero-section {
+//     background-color: #fff;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url("./images/hero/Header1x-phone.jpg");
+
+//     @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+//     screen and (min-resolution: 192dpi) and (min-width: 320px),
+//     screen and (min-resolution: 2dppx) and (min-width: 320px){
+
+//         .hero-section {
+//             background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url("./images/hero/Header1x-phone.jpg");
+//         }
+//     }
+
+// }
+
+// .hero-section {
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.6),
+//       rgba(47, 48, 58, 0.6)
+//     ),
+//     url('../images/hero-mobile.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+
+//   @media screen and (min-resolution: 2dppx) {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.6),
+//         rgba(47, 48, 58, 0.6)
+//       ),
+//       url('../images/hero-mobile@2x.jpg');
+//   }
+
+//   @media screen and (min-width: 480px) {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.6),
+//         rgba(47, 48, 58, 0.6)
+//       ),
+//       url('../images/hero-tablet.jpg');
+
+//     @media screen and (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.6),
+//           rgba(47, 48, 58, 0.6)
+//         ),
+//         url('../images/hero-tablet@2x.jpg');
+//     }
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: linear-gradient(
+//         rgba(47, 48, 58, 0.6),
+//         rgba(47, 48, 58, 0.6)
+//       ),
+//       url('../images/hero-desktop.jpg');
+
+//     @media screen and (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           rgba(47, 48, 58, 0.6),
+//           rgba(47, 48, 58, 0.6)
+//         ),
+//         url('../images/hero-desktop@2x.jpg');
+//     }
+//   }
+
+// }
 
 .container-hero {
     height: 400px;
