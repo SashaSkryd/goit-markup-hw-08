@@ -82,9 +82,6 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: $primary-white-color;
-  @include for-size(phone-only) {
-    overflow: auto;
-  }
 }
 
 .cards-block {
@@ -98,9 +95,8 @@
 
 .overlay {
   display: flex;
-  align-items: center;
   position: absolute;
-  padding: 0 24px;
+  padding: 63px 24px;
   top: 0;
   left: 0;
   width: 100%;
@@ -108,4 +104,14 @@
   background-color: $accent-color;
   transform: translateY(100%);
   transition: 250ms ease;
+
+  @include for-size(phone-only) {
+    max-width: 450px;
+    padding: 15px 15px;
+    overflow: scroll;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
 }

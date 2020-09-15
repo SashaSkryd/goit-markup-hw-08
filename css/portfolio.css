@@ -1153,12 +1153,6 @@ button {
   color: #ffffff;
 }
 
-@media (max-width: 479px) {
-  .overlay-text {
-    overflow: auto;
-  }
-}
-
 .cards-block {
   position: relative;
   overflow: hidden;
@@ -1174,11 +1168,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   position: absolute;
-  padding: 0 24px;
+  padding: 63px 24px;
   top: 0;
   left: 0;
   width: 100%;
@@ -1188,6 +1179,18 @@ button {
           transform: translateY(100%);
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
+}
+
+@media (max-width: 479px) {
+  .overlay {
+    max-width: 450px;
+    padding: 15px 15px;
+    overflow: scroll;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
 }
 
 .footer {
